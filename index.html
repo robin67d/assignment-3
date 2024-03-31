@@ -11,7 +11,6 @@
     <!-- google fonts -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
@@ -26,13 +25,28 @@
 </head>
 
 <body>
-    <!-- grid place-content-center h-screen  -->
     <!-- navbar start here -->
-    <div class="navbar">
+    <div class="navbar flex justify-center items-center">
         <div class="navbar-start">
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle w-6 h-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="max-h-5 w-5" fill="none" viewBox="0 0 24 24"
+
+            <div class="hidden lg:flex text-cente text-black text-4xl font-bold">
+                Hockey<span class="text-red-500">'</span>s
+            </div>
+
+            <div class="hidden lg:flex text-[18px] font-normal pt-3 pl-[180px]">
+                <ul class="flex gap-11 ">
+                    <li><a class="text-red-500">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown lg:hidden">
+
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle w-6 h-6 lg::hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="max-h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h7" />
@@ -49,22 +63,22 @@
                 </ul>
             </div>
         </div>
-        <div class="px-2 absolute pl-12 gap-2 rounded[8px] bg[#FF4240;]">
+
+        <div class="absolute pr-32 bg[#FF4240;] lg:hidden">
             <a class="text[#131318;] text-2xl font-bold">Hockey<span class="text-red-500">'</span>s</a>
         </div>
 
-        <div class="">
-            <button class=" hidden btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </button>
-        </div>
+        <button class="hidden btn btn-ghost btn-circle lg:flex justify-center items-center relative right-7 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </button>
+
         <div
-            class=" w-[124px] h-[41px] px-2 ml-10 rounded-lg flex justify-center items-center gap-2 rounded[8px] bg-red-500">
-            <a class="text-white text[18px] font-bold">Get Ticket</a>
+            class=" w-[124px] h-[41px] gap-2 bg-red-500 flex justify-center items-center rounded-lg lg:mt-3 text-[19px]">
+            <a class="text-white font-bold">Get Ticket</a>
         </div>
     </div>
 
